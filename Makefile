@@ -1,6 +1,6 @@
 # Compiler
 CC = gcc
-CFLAGS = -Iinclude -Iother -Iother/glad -Iother/GLFW -Iother/fastobj -Iother/cglm -Wall -Wextra
+CFLAGS = -Iinclude -Iother -Iother/tinyobjloader -Iother/glad -Iother/GLFW -Iother/fastobj -Iother/cglm -Wall -Wextra
 LDFLAGS = -Lother/GLFW -lglfw3dll -lopengl32 -lgdi32
 
 # Directories
@@ -10,7 +10,7 @@ TARGET = $(OBJ_DIR)/main.exe
 
 # Gather all .c files in src and subdirectories, plus dependencies
 SRCS := $(wildcard $(SRC_DIR)/*.c) $(wildcard $(SRC_DIR)/*/*.c) \
-        other/glad/glad.c other/fastobj/fast_obj.c
+        other/glad/glad.c other/fastobj/fast_obj.c other/tinyobjloader/tinyobj_loader.c 
 
 # Map .c files to .o files in bin/
 OBJS := $(patsubst %.c,$(OBJ_DIR)/%.o,$(SRCS))

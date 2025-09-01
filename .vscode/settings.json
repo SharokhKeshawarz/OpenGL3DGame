@@ -27,6 +27,13 @@
         "stdio.h": "c",
         "stdlib.h": "c",
         "tinyobj_loader_c.h": "c",
-        "fast_obj.h": "c"
+        "fast_obj.h": "c",
+        "utils.h": "c",
+        "input.h": "c",
+        "camera.h": "c",
+        "window.h": "c",
+        "shader.h": "c",
+        "ios": "c",
+        "xiosbase": "c"
     }
 }
